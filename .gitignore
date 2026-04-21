@@ -1,0 +1,35 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+*.py[cod]
+*$py.class
+build/
+dist/
+wheels/
+*.egg-info
+.python-version
+
+# Virtual environments
+.venv
+.env
+# dbt specific
+target/
+dbt_packages/
+logs/
+
+
+# Credentials
+profiles.yml
+.aws/
+
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+README.md
+airbnb-data-platform-output.md
