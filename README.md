@@ -59,12 +59,14 @@ Setup Instructions
 Clone the Repo:
 
 Bash
-git clone [https://github.com/your-repo/airbnb-snowflake.git](https://github.com/your-repo/airbnb-snowflake.git)
+
+git clone [repo-url]
 cd airbnb-snowflake
 Install Dependencies:
 We use uv to manage the environment. Run:
 
 Bash
+
 uv sync
 Configure dbt Profile:
 Create or edit your ~/.dbt/profiles.yml to include your Snowflake credentials:
@@ -99,17 +101,25 @@ To track how Airbnb listings change over time (e.g., price changes or status upd
 Check your connection:
 
 Bash
+
 dbt debug
+
 Run the entire pipeline:
 
 Bash
+
 dbt run
+
 Run data quality tests:
 
 Bash
+
 dbt test
+
 Generate and view documentation:
 
 Bash
+
 dbt docs generate
+
 dbt docs serve
